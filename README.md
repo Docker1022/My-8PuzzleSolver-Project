@@ -1,11 +1,12 @@
 # ĐỒ ÁN CÁ NHÂN MÔN TRÍ TUỆ NHÂN TẠO
 
 8-Puzzle là một trò chơi trí tuệ kinh điển, diễn ra trên bảng kích thước 3x3, gồm 8 ô được đánh số từ 1 đến 8 cùng một ô trống. Mục tiêu là di chuyển các ô sao cho chúng sắp xếp đúng thứ tự. Để giải bài toán này một cách hiệu quả và tối ưu, các thuật toán tìm kiếm trong trí tuệ nhân tạo (AI) thường được áp dụng nhằm tìm ra con đường ngắn nhất dẫn đến lời giải.
-=======
+---
 ## Giới thiệu bài toán 8-Puzzle
 
 8-Puzzle Solver là một ứng dụng phần mềm được phát triển nhằm giải bài toán 8-Puzzle – trò chơi sắp xếp các ô số trong lưới 3x3. Dự án được xây dựng bằng ngôn ngữ Python, sử dụng Tkinter để tạo giao diện đồ họa giúp người dùng tương tác trực quan với quá trình giải. Chương trình tích hợp nhiều thuật toán tìm kiếm khác nhau, cho phép so sánh hiệu quả giữa các phương pháp trong việc tìm ra lời giải.
-=======
+
+---
 ## Nội dung chi tiết
 ### 1. Mục tiêu
 Mục tiêu chính của dự án là phát triển một hệ thống linh hoạt và toàn diện để giải quyết bài toán 8-Puzzle – một trong những ví dụ kinh điển trong lĩnh vực trí tuệ nhân tạo (AI) và khoa học máy tính. Thay vì chỉ dừng lại ở việc xây dựng một công cụ tìm lời giải, chương trình hướng đến việc tạo ra một nền tảng hỗ trợ học tập, nghiên cứu và thử nghiệm với các thuật toán AI khác nhau. Dự án tích hợp từ các chiến lược tìm kiếm cơ bản đến những phương pháp hiện đại như học tăng cường, nhằm đem lại một công cụ hữu ích cho cả mục đích giáo dục và thực hành chuyên sâu trong lĩnh vực AI.
@@ -15,8 +16,8 @@ Mục tiêu chính của dự án là phát triển một hệ thống linh ho�
 Trong phần này, chương trình giải bài toán 8-Puzzle bằng các thuật toán tìm kiếm không sử dụng thông tin định hướng (heuristic). Dưới đây là các yếu tố then chốt trong mô hình bài toán:
 
 - **Trạng thái khởi đầu:**
-Là một bảng 3x3 chứa 8 ô số (từ 1 đến 8) và một ô trống (ký hiệu là 0). Ví dụ:
-[[1, 2, 3], [0, 5, 6], [4, 7, 8]]
+Là một bảng 3x3 chứa 8 ô số (từ 1 đến 8) và một ô trống (ký hiệu là 0) 
+Ví dụ: [[1, 2, 3], [0, 5, 6], [4, 7, 8]]
 
 - **Trạng thái mục tiêu:**
 Là cấu hình đích chuẩn, trong đó các số được sắp xếp theo thứ tự tăng dần, và ô trống nằm ở góc dưới bên phải:
@@ -31,7 +32,7 @@ Tại mỗi bước, ô trống có thể di chuyển theo bốn hướng: lên,
 - **Chi phí hành động:**
 Mỗi bước di chuyển có chi phí bằng 1. Mục tiêu là tìm ra chuỗi hành động có tổng chi phí thấp nhất dẫn đến trạng thái đích.
 
--**Chiến lược giải quyết:**
+- **Chiến lược giải quyết:**
 Chương trình áp dụng các thuật toán tìm kiếm không có thông tin để khám phá không gian trạng thái, bao gồm:
 
     + BFS (Breadth-First Search – Tìm kiếm theo chiều rộng)
@@ -61,7 +62,7 @@ Trong số các thuật toán không sử dụng thông tin định hướng, ID
 
 
 
-
+---
 #### 2.2. Nhóm thuật toán tìm kiếm có thông tin (Informed Search Algorithms)
 **Cách tiếp cận bài toán và cấu trúc tổng quan**
 
@@ -93,6 +94,7 @@ Các thuật toán được sử dụng trong nhóm này đều khai thác thôn
 
 ---
 **Đánh giá và phân tích thuật toán**
+
 - **GBFS (Tìm kiếm tham lam theo heuristic):**
 
 GBFS ra quyết định dựa trên ước lượng khoảng cách từ trạng thái hiện tại đến đích (h(n)), bỏ qua chi phí đã đi. Nhờ vậy, thuật toán này thường có tốc độ nhanh, duyệt ít nút, nhưng lại dễ mắc kẹt ở những lời giải không tối ưu nếu heuristic không phản ánh đúng khoảng cách thực tế.
@@ -114,27 +116,27 @@ GBFS là lựa chọn phù hợp khi yêu cầu tốc độ nhanh và không qu�
 A* là giải pháp mạnh nếu mục tiêu là tìm được đường đi ngắn nhất với độ chính xác cao – dù phải đánh đổi bằng chi phí tài nguyên lớn hơn.
 
 
-
+---
 #### 2.3. Nhóm thuật toán tìm kiếm cục bộ (Local Optimization Algorithms)
 
 **Thành phần bài toán và phương pháp giải quyết**
 
--**Trạng thái ban đầu:**
+- **Trạng thái ban đầu:**
 Xuất phát từ một bảng 3x3 chứa các số từ 1 đến 8 và một ô trống (0), ví dụ: [[1, 3, 6], [4, 2, 0], [7, 5, 8]].
 
--**Trạng thái đích:**
+- **Trạng thái đích:**
 Mục tiêu là đưa bảng về cấu hình lý tưởng [[1, 2, 3], [4, 5, 6], [7, 8, 0]], nơi các số được sắp xếp theo thứ tự tăng dần và ô trống nằm ở vị trí cuối cùng.
 
--**Không gian trạng thái:**
+- **Không gian trạng thái:**
 Gồm toàn bộ các cấu hình hợp lệ của lưới 3x3, được hình thành qua việc di chuyển ô trống đến các vị trí khác nhau để hoán đổi với ô liền kề.
 
--**Tập hành động:**
+- **Tập hành động:**
 Tại mỗi trạng thái, ô trống có thể di chuyển theo 4 hướng (trái, phải, lên, xuống) nếu không vượt ra ngoài giới hạn bảng.
 
--**Chi phí hành động:**
+- **Chi phí hành động:**
 Mỗi thao tác di chuyển được tính là 1 đơn vị chi phí. Do đó, lời giải tốt nhất là lời giải ngắn nhất về số bước.
 
--**Cách tiếp cận giải bài toán:**
+- **Cách tiếp cận giải bài toán:**
 Các thuật toán trong nhóm này sử dụng chiến lược tối ưu cục bộ để dần tiến tới trạng thái mục tiêu, bao gồm:
 Simple Hill Climbing (SHC), Steepest Ascent Hill Climbing (SAHC), Simulated Annealing (SA), Beam Search (BS), Genetic Algorithm (GA) và Random Hill Climbing (RHC).
 
