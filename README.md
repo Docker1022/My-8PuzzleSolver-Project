@@ -44,7 +44,7 @@ Chương trình áp dụng các thuật toán tìm kiếm không có thông tin 
     + IDS (Iterative Deepening Search – Tìm kiếm theo độ sâu tăng dần)
 
 <p align="center">
-  <img src="assets/Nhóm-1.gif" width="400" />
+  <img src="assets/Nhóm-1.gif" style="max-width: 100%; height: auto;" />
 </p>
 
 ---
@@ -93,7 +93,7 @@ Các thuật toán được sử dụng trong nhóm này đều khai thác thôn
     + Iterative Deepening A* (IDA*)
 
 <p align="center">
-  <img src="assets/Nhóm-2.gif" width="400" />
+  <img src="assets/Nhóm-2.gif" style="max-width: 100%; height: auto;" />
 </p>
 
 ---
@@ -146,7 +146,7 @@ Các thuật toán trong nhóm này sử dụng chiến lược tối ưu cục 
 Simple Hill Climbing (SHC), Steepest Ascent Hill Climbing (SAHC), Simulated Annealing (SA), Beam Search (BS), Genetic Algorithm (GA) và Random Hill Climbing (RHC).
 
 <p align="center">
-  <img src="assets/Nhóm-3.gif" width="400" />
+  <img src="assets/Nhóm-3.gif" style="max-width: 100%; height: auto;" />
 </p>
 
 ---
@@ -210,7 +210,7 @@ Mỗi bước di chuyển được gán chi phí bằng 1. Dù thông tin đầu
 Các phương pháp như AND-OR Search, Belief State Search, và POS đều tìm cách xử lý các tình huống phức tạp thông qua việc duy trì và cập nhật các tập hợp belief states. Mục tiêu là tìm ra chuỗi hành động có thể áp dụng cho toàn bộ các kịch bản khả dĩ trong môi trường không rõ ràng.
 
 <p align="center">
-  <img src="assets/Nhóm-4.gif" width="400" />
+  <img src="assets/Nhóm-4.gif" style="max-width: 100%; height: auto;" />
 </p>
 
 ---
@@ -268,7 +268,7 @@ Khác với các bài toán tối ưu, CSP không yêu cầu đường đi ngắ
 Là một dãy các phép gán tuần tự, bắt đầu từ bảng trống và kết thúc ở trạng thái đích hợp lệ. Các thuật toán như Backtracking và Forward Checking đảm bảo kết quả chỉ được chấp nhận nếu tất cả ràng buộc được thỏa mãn.
 
 <p align="center">
-  <img src="assets/Nhóm-5.gif" width="400" />
+  <img src="assets/Nhóm-5.gif" style="max-width: 100%; height: auto;" />
 </p>
 
 ---
@@ -320,7 +320,7 @@ Thay vì sử dụng chi phí như trong các thuật toán truyền thống, Q-
 Q-Learning xây dựng một bảng giá trị gọi là Q-table, trong đó mỗi cặp (trạng thái, hành động) được gán một giá trị thể hiện mức độ hữu ích của hành động đó tại trạng thái tương ứng. Thông qua quá trình thử nghiệm – vừa khám phá hành động mới (exploration), vừa khai thác kiến thức đã học (exploitation) – agent dần điều chỉnh Q-table để học ra chuỗi hành động tối ưu. Sau khi huấn luyện đầy đủ, bảng Q này có thể được dùng để giải bài toán từ bất kỳ trạng thái hợp lệ nào.
 
 <p align="center">
-  <img src="assets/Nhóm-6.gif" width="400" />
+  <img src="assets/Nhóm-6.gif" style="max-width: 100%; height: auto;" />
 </p>
 
 ---
