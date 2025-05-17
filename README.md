@@ -99,11 +99,11 @@ Các thuật toán được sử dụng trong nhóm này đều khai thác thôn
 
 GBFS ra quyết định dựa trên ước lượng khoảng cách từ trạng thái hiện tại đến đích (h(n)), bỏ qua chi phí đã đi. Nhờ vậy, thuật toán này thường có tốc độ nhanh, duyệt ít nút, nhưng lại dễ mắc kẹt ở những lời giải không tối ưu nếu heuristic không phản ánh đúng khoảng cách thực tế.
 
-- **A* (Tìm kiếm tối ưu dựa trên tổng chi phí):**
+- **A Star (Tìm kiếm tối ưu dựa trên tổng chi phí):**
 
 A* sử dụng hàm đánh giá f(n) = g(n) + h(n) – kết hợp giữa chi phí thực tế từ gốc đến trạng thái hiện tại (g(n)) và giá trị heuristic ước lượng từ trạng thái đó đến đích (h(n)). Nhờ sự cân bằng giữa thực tế và dự đoán, A* thường cho ra lời giải tối ưu. Tuy nhiên, nhược điểm là tiêu tốn bộ nhớ lớn, vì cần duy trì hàng đợi ưu tiên chứa nhiều trạng thái cùng lúc.
 
-- **IDA* (Tìm kiếm sâu dần có hướng dẫn):**
+- **IDA Star (Tìm kiếm sâu dần có hướng dẫn):**
 
 Đây là phiên bản cải tiến của A*, áp dụng kỹ thuật tìm kiếm sâu dần nhưng có tích hợp thông tin heuristic. Thuật toán lặp lại việc tìm kiếm nhiều lần, mỗi lần mở rộng giới hạn f(n) dựa trên kết quả lần trước. Ưu điểm của IDA* là tiết kiệm bộ nhớ đáng kể. Tuy nhiên, nếu heuristic chưa đủ chính xác, nó có thể phải duyệt lại nhiều trạng thái, làm giảm hiệu quả tổng thể.
 ---
