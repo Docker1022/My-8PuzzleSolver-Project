@@ -106,6 +106,7 @@ A* sử dụng hàm đánh giá f(n) = g(n) + h(n) – kết hợp giữa chi ph
 - **IDA Star (Tìm kiếm sâu dần có hướng dẫn):**
 
 Đây là phiên bản cải tiến của A*, áp dụng kỹ thuật tìm kiếm sâu dần nhưng có tích hợp thông tin heuristic. Thuật toán lặp lại việc tìm kiếm nhiều lần, mỗi lần mở rộng giới hạn f(n) dựa trên kết quả lần trước. Ưu điểm của IDA* là tiết kiệm bộ nhớ đáng kể. Tuy nhiên, nếu heuristic chưa đủ chính xác, nó có thể phải duyệt lại nhiều trạng thái, làm giảm hiệu quả tổng thể.
+
 ---
 **Tổng kết**
 
